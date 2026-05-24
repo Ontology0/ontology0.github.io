@@ -1,28 +1,27 @@
 ---
 layout: profiles
-permalink: /people/
-title: people
-description: members of the lab or group
-nav: true
-nav_order: 7
+permalink: /team/
+title: team
+description: Alltology 연구팀 멤버
+nav: false
 
 profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
   - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
+    content: profile_seryeong.md
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <p><strong>박세령</strong></p>
+      <p>Conflict type 설계 · RAG 파이프라인</p>
+      <p><a href="https://github.com/ryeong03">@ryeong03</a></p>
   - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
+    content: profile_hyeonkyung.md
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <p><strong>손현경</strong></p>
+      <p>DPO 학습 · LoRA fine-tuning</p>
+      <p><a href="https://github.com/bbberylll">@bbberylll</a></p>
+  - align: right
+    content: profile_dayoung.md
+    more_info: >
+      <p><strong>이다영</strong></p>
+      <p>데이터 파이프라인 · 평가</p>
+      <p><a href="https://github.com/dev-ldy03">@dev-ldy03</a></p>
 ---

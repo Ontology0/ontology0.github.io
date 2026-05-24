@@ -1,11 +1,10 @@
 ---
 layout: page
-title: projects
+title: research
 permalink: /projects/
-description: A growing collection of your cool projects.
-nav: true
-nav_order: 3
-display_categories: [work, fun]
+description: Conflict-Aware PA-RAG 졸업프로젝트 연구
+nav: false
+display_categories: [research]
 horizontal: false
 ---
 

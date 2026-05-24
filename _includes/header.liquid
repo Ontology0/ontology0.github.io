@@ -46,6 +46,30 @@
             {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
           {% endfor %}
 
+          {% if site.data.navigation %}
+          <!-- Navigation from _data/navigation.yml -->
+          {% for item in site.data.navigation %}
+            {% if item.url == '/' %}
+              {% assign nav_active = page.permalink == '/' %}
+            {% elsif item.external %}
+              {% assign nav_active = false %}
+            {% else %}
+              {% assign nav_active = page.url contains item.url %}
+            {% endif %}
+            <li class="nav-item {% if nav_active %}active{% endif %}">
+              <a
+                class="nav-link"
+                href="{% if item.external or item.url contains '://' %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}"
+                {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}
+              >
+                {{- item.title -}}
+                {% if nav_active %}
+                  <span class="sr-only">(current)</span>
+                {% endif %}
+              </a>
+            </li>
+          {% endfor %}
+          {% else %}
           <!-- About -->
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
@@ -117,6 +141,7 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          {% endif %}
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
