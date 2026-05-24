@@ -1,11 +1,12 @@
-- title: about
-  url: /
-- title: research
-  url: /projects/
-- title: team
-  url: /team/
-- title: github
-  url: https://github.com/Ontology0/Graduation-Project
-  external: true
-- title: publication
-  url: /publications/
+pages:
+  - title: about
+    url: /
+  - title: research
+    url: /projects/
+  - title: team
+    url: /team/
+  - title: github
+    url: https://github.com/Ontology0/Graduation-Project
+    external: true
+  - title: publication
+    url: /publications/
