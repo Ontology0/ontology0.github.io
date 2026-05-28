@@ -1,115 +1,95 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
-}
-
-@book{einstein1956investigations,
+@inproceedings{parag2025,
+  abbr        = {NAACL},
   bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+  title       = {PA-RAG: RAG Alignment via Multi-Perspective Preference Optimization},
+  author      = {Wu, Jiayi and Ren, Yukun and Luo, Tianhao and Zhu, Qi and Gao, Yiyun and others},
+  booktitle   = {Proceedings of NAACL 2025},
+  year        = {2025},
+  html        = {https://arxiv.org/abs/2412.14510},
+  abstract    = {Proposes multi-perspective preference alignment for RAG generators via DPO, covering informativeness, robustness, and citation quality. The direct base work for Conflict-Aware PA-RAG.},
+  note        = {Base paper for this project},
+  selected    = {true}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
+@article{knowledgeconflict2024,
+  abbr        = {arXiv},
   bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+  title       = {Knowledge Conflicts for LLMs: A Survey},
+  author      = {Xu, Rongwu and Qi, Zehan and Wang, Cunxiang and Wang, Hongru and Zhang, Yue and Xu, Wei},
+  journal     = {arXiv preprint arXiv:2403.08319},
+  year        = {2024},
+  html        = {https://arxiv.org/abs/2403.08319},
+  abstract    = {Comprehensive survey of knowledge conflict types in LLMs: context–memory, inter-context, and intra-memory conflicts. Core reference for defining the research problem scope.},
+  selected    = {true}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
+@article{clasheval2024,
+  abbr        = {arXiv},
   bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
+  title       = {ClashEval: Quantifying the Tug-of-War Between an LLM's Internal Prior and External Evidence},
+  author      = {Wu, Kevin and Wu, Eric and Zou, James},
+  journal     = {arXiv preprint arXiv:2404.10198},
+  year        = {2024},
+  html        = {https://arxiv.org/abs/2404.10198},
+  abstract    = {Benchmark for measuring how LLMs balance internal knowledge vs. retrieved evidence under conflict. Used as a synthetic training data source for DPO preference pairs.}
 }
 
-@book{przibram1967letters,
+@article{conflictbank2024,
+  abbr        = {arXiv},
   bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+  title       = {ConflictBank: A Benchmark for Evaluating the Influence of Knowledge Conflicts in LLMs},
+  author      = {Jin, Zhaochen and Zhang, Wenlong and Zeng, Shaozhi and Zhou, Xin and Liu, Xiangdong and Wei, Zheng},
+  journal     = {arXiv preprint arXiv:2408.12076},
+  year        = {2024},
+  html        = {https://arxiv.org/abs/2408.12076},
+  abstract    = {Large-scale benchmark covering context–memory and inter-context conflicts. Provides conflict pairs used for DPO training data construction in this project.}
+}
+
+@article{wikicontradict2024,
+  abbr        = {arXiv},
+  bibtex_show = {true},
+  title       = {WikiContradict: A Benchmark for Evaluating LLMs on Real-World Knowledge Conflicts from Wikipedia},
+  author      = {Orlikowski, Mateusz and Hovy, Dirk and Plank, Barbara},
+  journal     = {arXiv preprint arXiv:2406.13805},
+  year        = {2024},
+  html        = {https://arxiv.org/abs/2406.13805},
+  abstract    = {Natural knowledge conflict benchmark from Wikipedia contradictions. Used for out-of-distribution evaluation to measure limits of conflict-aware fine-tuning.}
+}
+
+@inproceedings{dpo2023,
+  abbr        = {NeurIPS},
+  bibtex_show = {true},
+  title       = {Direct Preference Optimization: Your Language Model Is Secretly a Reward Model},
+  author      = {Rafailov, Rafael and Sharma, Archit and Mitchell, Eric and Ermon, Stefano and Manning, Christopher D and Finn, Chelsea},
+  booktitle   = {Advances in Neural Information Processing Systems},
+  volume      = {36},
+  year        = {2023},
+  html        = {https://arxiv.org/abs/2305.18290},
+  abstract    = {Proposes DPO as a simpler and more stable alternative to RLHF for preference alignment. The core training objective used in Conflict-Aware PA-RAG.}
+}
+
+@inproceedings{lora2022,
+  abbr        = {ICLR},
+  bibtex_show = {true},
+  title       = {LoRA: Low-Rank Adaptation of Large Language Models},
+  author      = {Hu, Edward J and Shen, Yelong and Wallis, Phillip and Allen-Zhu, Zeyuan and Li, Yuanzhi and Wang, Shean and Chen, Weizhu},
+  booktitle   = {International Conference on Learning Representations},
+  year        = {2022},
+  html        = {https://arxiv.org/abs/2106.09685},
+  abstract    = {Parameter-efficient fine-tuning via low-rank weight updates. Enables DPO training on limited academic compute by drastically reducing trainable parameters.}
+}
+
+@inproceedings{rag2020,
+  abbr        = {NeurIPS},
+  bibtex_show = {true},
+  title       = {Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks},
+  author      = {Lewis, Patrick and Perez, Ethan and Piktus, Aleksandra and Petroni, Fabio and Karpukhin, Vladimir and Goyal, Naman and others},
+  booktitle   = {Advances in Neural Information Processing Systems},
+  volume      = {33},
+  year        = {2020},
+  html        = {https://arxiv.org/abs/2005.11401},
+  abstract    = {Seminal RAG paper combining dense retrieval with seq2seq generation. Foundational architecture for the retrieval pipeline implemented in this project.}
 }
