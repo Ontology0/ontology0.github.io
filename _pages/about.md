@@ -65,26 +65,7 @@ Base RAG와 Conflict-Aware Prompting이 충돌 상황에서 어떻게 다르게 
   </div>
 </div>
 
-<details>
-<summary style="cursor: pointer; font-weight: 600; margin: 1rem 0;">📌 추천 시나리오 펼치기</summary>
-<table style="margin-top: 0.8rem; width: 100%; border-collapse: collapse; font-size: 0.9rem;">
-  <thead><tr style="background: #f5f5f5;">
-    <th style="padding: 0.5rem 0.8rem; text-align: left; border: 1px solid #ddd;">질문</th>
-    <th style="padding: 0.5rem 0.8rem; text-align: left; border: 1px solid #ddd;">관찰 포인트</th>
-  </tr></thead>
-  <tbody>
-    <tr>
-      <td style="padding: 0.5rem 0.8rem; border: 1px solid #ddd;"><em>"What color is the Northwood Institute mascot after the 2019 revision?"</em></td>
-      <td style="padding: 0.5rem 0.8rem; border: 1px solid #ddd;">Base RAG는 내부 지식(deep blue), Conflict-Aware는 문서 우선(silver-green)</td>
-    </tr>
-    <tr>
-      <td style="padding: 0.5rem 0.8rem; border: 1px solid #ddd;"><em>"What is knowledge conflict in RAG?"</em></td>
-      <td style="padding: 0.5rem 0.8rem; border: 1px solid #ddd;">두 config의 설명 방식 차이 비교</td>
-    </tr>
-  </tbody>
-</table>
-<p style="margin-top: 0.8rem; font-size: 0.9rem;">Config 드롭다운에서 <strong>Base RAG</strong> → <strong>Conflict-Aware Prompting</strong> 으로 바꿔가며 같은 질문의 답변을 비교해보세요.</p>
-</details>
+📌 **추천 시나리오** — _"What color is the Northwood Institute mascot after the 2019 revision?"_ 를 두 Config로 비교해보세요. Base RAG는 내부 지식(deep blue), Conflict-Aware는 검색 문서 우선(silver-green)으로 답합니다.
 
 ## **팀원**
 
