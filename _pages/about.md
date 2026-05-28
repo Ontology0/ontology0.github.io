@@ -27,11 +27,11 @@ PA-RAG의 세 가지 정렬 기준(informativeness, robustness, citation quality
 
 LLM 기반 RAG 시스템에서 모델이 학습으로 알고 있는 것과 런타임에 검색된 문서가 **서로 다른 말을 할 때**, 어떻게 행동해야 하는지 명확한 기준이 없습니다. PA-RAG는 RAG generator를 preference optimization으로 정렬하지만, 위 충돌 케이스를 명시적으로 다루지 않습니다.
 
-| 충돌 상황 | 올바른 행동 |
-|---|---|
-| 외부 문서가 최신 정보 | 외부를 따라야 함 |
-| 외부 문서가 잘못된 정보 | 내부를 따라야 함 |
-| 둘 다 불확실 | 불확실성을 표현해야 함 |
+| 충돌 상황               | 올바른 행동            |
+| ----------------------- | ---------------------- |
+| 외부 문서가 최신 정보   | 외부를 따라야 함       |
+| 외부 문서가 잘못된 정보 | 내부를 따라야 함       |
+| 둘 다 불확실            | 불확실성을 표현해야 함 |
 
 ## **핵심 연구 질문**
 
@@ -53,28 +53,35 @@ Base RAG와 Conflict-Aware Prompting이 충돌 상황에서 어떻게 다르게 
   <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔬</div>
   <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">Conflict-Aware PA-RAG — Interactive Demo</div>
   <div style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 1.2rem;">질문을 입력하고 Config를 바꿔가며 두 RAG 방식의 응답 차이를 비교해보세요.</div>
-  <a href="https://huggingface.co/spaces/ponyo03/conflict-aware-rag-demo" target="_blank" rel="noopener"
-     style="display: inline-block; background: white; color: #764ba2; font-weight: 700; padding: 0.6rem 1.8rem; border-radius: 999px; text-decoration: none; font-size: 0.95rem;">
-    🚀 데모 실행하기
-  </a>
+  <div style="display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap;">
+    <a href="https://huggingface.co/spaces/ponyo03/conflict-aware-rag-demo" target="_blank" rel="noopener"
+       style="display: inline-block; background: white; color: #764ba2; font-weight: 700; padding: 0.6rem 1.8rem; border-radius: 999px; text-decoration: none; font-size: 0.95rem;">
+      🚀 웹 데모
+    </a>
+    <a href="https://t.me/alltology_rag_bot" target="_blank" rel="noopener"
+       style="display: inline-block; background: #29B6F6; color: white; font-weight: 700; padding: 0.6rem 1.8rem; border-radius: 999px; text-decoration: none; font-size: 0.95rem;">
+      ✈️ 텔레그램 봇
+    </a>
+  </div>
 </div>
 
 <details>
 <summary style="cursor: pointer; font-weight: 600; margin: 1rem 0;">📌 추천 시나리오 펼치기</summary>
 
-| 질문 | 관찰 포인트 |
-|------|-------------|
-| *"What color is the Northwood Institute mascot after the 2019 revision?"* | Base RAG는 내부 지식(deep blue), Conflict-Aware는 문서 우선(silver-green) |
-| *"What is knowledge conflict in RAG?"* | 두 config의 설명 방식 차이 비교 |
+| 질문                                                                      | 관찰 포인트                                                               |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| _"What color is the Northwood Institute mascot after the 2019 revision?"_ | Base RAG는 내부 지식(deep blue), Conflict-Aware는 문서 우선(silver-green) |
+| _"What is knowledge conflict in RAG?"_                                    | 두 config의 설명 방식 차이 비교                                           |
 
 Config 드롭다운에서 **Base RAG** → **Conflict-Aware Prompting** 으로 바꿔가며 같은 질문의 답변을 비교해보세요.
+
 </details>
 
 ## **팀원**
 
-| | 박세령 | 손현경 | 이다영 |
-|:--:|:--:|:--:|:--:|
-| **역할** | Conflict type 설계 · 평가 | DPO 학습 · LoRA fine-tuning | 데이터 파이프라인 · RAG 파이프라인 |
+|            |                  박세령                  |                   손현경                   |                   이다영                   |
+| :--------: | :--------------------------------------: | :----------------------------------------: | :----------------------------------------: |
+|  **역할**  |        Conflict type 설계 · 평가         |        DPO 학습 · LoRA fine-tuning         |     데이터 파이프라인 · RAG 파이프라인     |
 | **GitHub** | [@ryeong03](https://github.com/ryeong03) | [@bbberylll](https://github.com/bbberylll) | [@dev-ldy03](https://github.com/dev-ldy03) |
 
 ## **저장소**
